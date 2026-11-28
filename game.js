@@ -520,9 +520,9 @@ const TREE = (() => {
 /* Art overhaul (Nov 27, 2026): the whole cast is drawn at the GBA
    sample's proportions — adults 16x24, Oma 16x22, the kids 16x19,
    Alvin 20x18 — feet anchored by charSprite via set.w/set.h. */
-const SKIN = '#f2c184', HAIR = '#6b4423', EYE = '#20242a';
+const SKIN = '#f9c27d', HAIR = '#6d3f18', EYE = '#191c21';
 /* k = outline, S/H/B = shaded side of skin/hair/shirt */
-const FRANK_PAL = { k: '#33302a', G: '#3da34a', g: '#2c7a36', L: '#5cc46a', s: '#f2c184', S: '#dda15e', h: '#7a4a26', H: '#5b3418', l: '#96602f', e: '#26221e', b: '#3a78d4', B: '#2a5aa8', p: '#2f4d8f', P: '#233a6e', o: '#6b4423', O: '#4e2f16', w: '#f8f8f8' };
+const FRANK_PAL = { k: '#282521', G: '#2da53d', g: '#207c2c', L: '#4fd161', s: '#f9c27d', S: '#e5a156', h: '#7d441a', H: '#5d300f', l: '#995a20', e: '#1e1b17', b: '#2774e7', B: '#1951ad', p: '#214492', P: '#183370', o: '#6d3f18', O: '#502b0e', w: '#f8f8f8' };
 const FRANK_DOWN = makeSprite([
 '................',
 '.....kkkkkk.....',
@@ -784,7 +784,7 @@ const FRANK_SIDE_TALK = makeSprite([
 '.....kookOOk....',
 ], FRANK_PAL);
 const FRANK_SET = { down: [FRANK_DOWN, FRANK_DOWN2], up: [FRANK_UP, FRANK_UP2], side: [FRANK_SIDE, FRANK_SIDE2], blinkDown: FRANK_DOWN_BLINK, blinkSide: FRANK_SIDE_BLINK, talkDown: FRANK_DOWN_TALK, talkSide: FRANK_SIDE_TALK, w: 16, h: 24 };
-const CONSTANCE_PAL = { k: '#33302a', s: '#f2c184', S: '#dda15e', h: '#8a5a2e', H: '#6f4520', l: '#a5713d', e: '#26221e', d: '#2a9d8f', D: '#1f7a6e', L: '#45bcab', w: '#f8f8f8', o: '#3a2c1c', m: '#7a3b2e' };
+const CONSTANCE_PAL = { k: '#282521', s: '#f9c27d', S: '#e5a156', h: '#8d5420', H: '#724015', l: '#a76a2d', e: '#1e1b17', d: '#1aa191', D: '#127d6f', L: '#36cbb6', w: '#f8f8f8', o: '#3a2a17', m: '#7c3222' };
 const CONSTANCE_DOWN = makeSprite([
 '................',
 '.....kkkkkk.....',
@@ -1046,7 +1046,7 @@ const CONSTANCE_SIDE_TALK = makeSprite([
 '.....koo.koo....',
 ], CONSTANCE_PAL);
 const CONSTANCE_SET = { down: [CONSTANCE_DOWN, CONSTANCE_DOWN2], up: [CONSTANCE_UP, CONSTANCE_UP2], side: [CONSTANCE_SIDE, CONSTANCE_SIDE2], blinkDown: CONSTANCE_DOWN_BLINK, blinkSide: CONSTANCE_SIDE_BLINK, talkDown: CONSTANCE_DOWN_TALK, talkSide: CONSTANCE_SIDE_TALK, w: 16, h: 24 };
-const JEREMIAH_PAL = { k: '#20242a', s: SKIN, S: '#d99e5f', h: '#4a2f1d', H: '#38220f', e: EYE, t: '#3b6fe0', T: '#2a4a9f', j: '#2a4a7f', w: '#e8e8e8', o: '#33261a', m: '#7a3b2e' };
+const JEREMIAH_PAL = { k: '#191c21', s: SKIN, S: '#e09e58', h: '#4b2b16', H: '#392009', e: EYE, t: '#2667f5', T: '#1a3fa3', j: '#1d4381', w: '#e8e8e8', o: '#332416', m: '#7c3222' };
 const JEREMIAH_DOWN = makeSprite([
 '................',
 '.....kkkkkk.....',
@@ -1272,7 +1272,7 @@ const JEREMIAH_SET = { down: [JEREMIAH_DOWN, JEREMIAH_DOWN2], up: [JEREMIAH_UP, 
 /* THE PASTOR — an unnamed guest (role only), in for the one evening the
    whole field has been pointing at: the October tasting. A dark suit, and
    the little white tab at his throat that says the rest. */
-const PASTOR_PAL = { k: '#20242a', s: SKIN, S: '#d99e5f', h: '#5a5148', H: '#453f36', e: EYE, t: '#33373f', T: '#22252b', j: '#26282e', w: '#f4f1e6', o: '#33261a', m: '#7a3b2e' };
+const PASTOR_PAL = { k: '#191c21', s: SKIN, S: '#e09e58', h: '#574c42', H: '#433c31', e: EYE, t: '#2f333d', T: '#1f2229', j: '#23252c', w: '#f4f1e6', o: '#332416', m: '#7c3222' };
 const PASTOR_DOWN = makeSprite([
 '................',
 '.....kkkkkk.....',
@@ -1544,7 +1544,7 @@ const PASTOR_SIDE_TALK = makeSprite([
 ], PASTOR_PAL);
 
 const PASTOR_SET = { down: [PASTOR_DOWN, PASTOR_DOWN2], up: [PASTOR_UP, PASTOR_UP2], side: [PASTOR_SIDE, PASTOR_SIDE2], blinkDown: PASTOR_DOWN_BLINK, blinkSide: PASTOR_SIDE_BLINK, talkDown: PASTOR_DOWN_TALK, talkSide: PASTOR_SIDE_TALK, w: 16, h: 24 };
-const ZOEY_PAL = { k: '#20242a', s: '#f0c8a0', S: '#d99e5f', h: '#7a4a21', H: '#5e3717', e: EYE, d: '#e06a9a', D: '#b84a78', l: '#5e4a6e', w: '#f8f8f8', o: '#33261a', m: '#7a3b2e' };
+const ZOEY_PAL = { k: '#191c21', s: '#f5c89b', S: '#e09e58', h: '#7d4515', H: '#61330d', e: EYE, d: '#ef5b97', D: '#c63c76', l: '#59416c', w: '#f8f8f8', o: '#332416', m: '#7c3222' };
 const ZOEY_DOWN = makeSprite([
 '......kDkDk.....',
 '.....kkkkkk.....',
@@ -1766,7 +1766,7 @@ const ZOEY_SIDE_TALK = makeSprite([
 ], ZOEY_PAL);
 
 const ZOEY_SET = { down: [ZOEY_DOWN, ZOEY_DOWN2], up: [ZOEY_UP, ZOEY_UP2], side: [ZOEY_SIDE, ZOEY_SIDE2], blinkDown: ZOEY_DOWN_BLINK, blinkSide: ZOEY_SIDE_BLINK, talkDown: ZOEY_DOWN_TALK, talkSide: ZOEY_SIDE_TALK, w: 16, h: 19 };
-const OMA_PAL = { k: '#20242a', s: '#e8b98a', S: '#cf9455', h: '#d8d8d8', H: '#a8a8a8', e: EYE, g: '#7f9fb0', t: '#7a5aa0', T: '#5e4480', w: '#f3e9d2', l: '#4a3a5e', o: '#33261a', m: '#7a3b2e' };
+const OMA_PAL = { k: '#191c21', s: '#eeb984', S: '#d6944e', h: '#d8d8d8', H: '#a8a8a8', e: EYE, g: '#79a1b6', t: '#7951a9', T: '#57397f', w: '#f7ebce', l: '#45325d', o: '#332416', m: '#7c3222' };
 const OMA_DOWN = makeSprite([
 '......kkkk......',
 '....kkhhhhkk....',
@@ -2018,9 +2018,9 @@ const OMA_SIDE_TALK = makeSprite([
 ], OMA_PAL);
 
 const OMA_SET = { down: [OMA_DOWN, OMA_DOWN2], up: [OMA_UP, OMA_UP2], side: [OMA_SIDE, OMA_SIDE2], blinkDown: OMA_DOWN_BLINK, blinkSide: OMA_SIDE_BLINK, talkDown: OMA_DOWN_TALK, talkSide: OMA_SIDE_TALK, w: 16, h: 22 };
-const MOM_PAL = { k: '#20242a', s: '#eec39b', S: '#d9a06b', h: '#8a5a34', H: '#6e4525', e: EYE, t: '#b07f2a', T: '#8a5f1e', w: '#f3e9d2', l: '#5e4a2a', o: '#33261a', m: '#7a3b2e' };
-const FRIEND_PAL = { k: '#20242a', s: '#d9a06b', S: '#b57f3d', h: '#2a2a2a', H: '#171717', e: '#20242a', t: '#5a7a4a', T: '#47633b', j: '#3a3a3a', o: '#26221e', m: '#7a3b2e' };
-const PASTORWIFE_PAL = { k: '#20242a', s: '#f0c8a0', S: '#d99e5f', h: '#8a6a3a', l: '#a8895c', e: '#20242a', m: '#7a3b2e', d: '#a03a5e', D: '#5e2a3f', L: '#f3e9d2', o: '#33261a' };
+const MOM_PAL = { k: '#191c21', s: '#f3c396', S: '#e0a064', h: '#8c5327', H: '#70401a', e: EYE, t: '#b57c18', T: '#8e5c10', w: '#f7ebce', l: '#5e4721', o: '#332416', m: '#7c3222' };
+const FRIEND_PAL = { k: '#191c21', s: '#e0a064', S: '#bc8036', h: '#272727', H: '#161616', e: '#191c21', t: '#537840', T: '#416233', j: '#373737', o: '#25201b', m: '#7c3222' };
+const PASTORWIFE_PAL = { k: '#191c21', s: '#f5c89b', S: '#e09e58', h: '#8b662d', l: '#b28b52', e: '#191c21', m: '#7c3222', d: '#a22b55', D: '#5e213a', L: '#f7ebce', o: '#332416' };
 const MOM_DOWN = makeSprite([
 '................',
 '.....kkkkkk.....',
@@ -2814,7 +2814,7 @@ const PASTORWIFE_SIDE_TALK = makeSprite([
 const MOM_SET = { down: [MOM_DOWN, MOM_DOWN2], up: [MOM_UP, MOM_UP2], side: [MOM_SIDE, MOM_SIDE2], blinkDown: MOM_DOWN_BLINK, blinkSide: MOM_SIDE_BLINK, talkDown: MOM_DOWN_TALK, talkSide: MOM_SIDE_TALK, w: 16, h: 24 };
 const FRIEND_SET = { down: [FRIEND_DOWN, FRIEND_DOWN2], up: [FRIEND_UP, FRIEND_UP2], side: [FRIEND_SIDE, FRIEND_SIDE2], blinkDown: FRIEND_DOWN_BLINK, blinkSide: FRIEND_SIDE_BLINK, talkDown: FRIEND_DOWN_TALK, talkSide: FRIEND_SIDE_TALK, w: 16, h: 24 };
 const PASTORWIFE_SET = { down: [PASTORWIFE_DOWN, PASTORWIFE_DOWN2], up: [PASTORWIFE_UP, PASTORWIFE_UP2], side: [PASTORWIFE_SIDE, PASTORWIFE_SIDE2], blinkDown: PASTORWIFE_DOWN_BLINK, blinkSide: PASTORWIFE_SIDE_BLINK, talkDown: PASTORWIFE_DOWN_TALK, talkSide: PASTORWIFE_SIDE_TALK, w: 16, h: 24 };
-const LILY_PAL = { k: '#20242a', p: '#e88ca0', P: '#e06a9a', s: '#f0c8a0', e: EYE, t: '#7a8a99', w: '#3a3f4a' };
+const LILY_PAL = { k: '#191c21', p: '#f38199', P: '#ef5b97', s: '#f5c89b', e: EYE, t: '#768a9d', w: '#353b47' };
 const LILY_STROLLER = makeSprite([
 '................................',
 '................................',
@@ -2854,7 +2854,7 @@ const LILY_STROLLER = makeSprite([
 /* Alvin: tan short coat, floppy darker ears, green collar with a tag.
    Side sprite faces right (charSprite flips it for left); the two frames
    wag his tail and stride his legs. */
-const ALVIN_PAL = { k: '#33302a', t: '#d9a05a', T: '#b57f3d', L: '#ecc088', D: '#8a5a2e', d: '#6f4520', m: '#f0dcae', n: '#26221e', g: '#37b24d', G: '#2b8a3e', y: '#ffd94a' };
+const ALVIN_PAL = { k: '#282521', t: '#e9a24a', T: '#c4802e', L: '#f8c27c', D: '#8d5420', d: '#724015', m: '#f8dfa6', n: '#1e1b17', g: '#28c143', G: '#1d8d34', y: '#ffd94a' };
 const ALVIN_DOWN = makeSprite([
 '.....kkkkkkkkkk.....',
 '..kkkttttttttttkkk..',
@@ -3070,7 +3070,7 @@ const DEER_SMALL = makeSprite([
 '.......kkkk............kkkk.....',
 '................................',
 '................................',
-], { a: '#8a5a2e', h: '#caa06a', e: '#20242a', b: '#b07a45', t: '#e8dcc0', k: '#20242a', m: '#e8dcc0', w: '#e8dcc0' });
+], { a: '#8d5420', h: '#d6a25e', e: '#191c21', b: '#bd7a38', t: '#eddebb', k: '#191c21', m: '#eddebb', w: '#eddebb' });
 
 /* ============================== POTS (16x16, sit on the bench) ============================== */
 /* ============================== POTS (16x16, sit on the bench) ============================== */
@@ -3152,7 +3152,7 @@ const DEER_BIG = makeSprite([
 '......................kbbbBk...kBBBBk........kBBBBk.kbbbBk......',
 '......................kkkkk....kkkkk.........kkkkk..kkkkk.......',
 '......................kkkkk....kkkkk.........kkkkk..kkkkk.......',
-], { a: '#8a5a2e', h: '#caa06a', e: '#20242a', b: '#b07a45', B: '#8a5a2e', w: '#e8dcc0', t: '#e8dcc0', k: '#20242a', m: '#e8dcc0' });
+], { a: '#8d5420', h: '#d6a25e', e: '#191c21', b: '#bd7a38', B: '#8d5420', w: '#eddebb', t: '#eddebb', k: '#191c21', m: '#eddebb' });
 /* alarmed variant: ear flattened back, white tail flagged high —
    shown once the deer's Pressure runs low (and as an idle ear-flicker) */
 const DEER_BIG2 = makeSprite([
@@ -3204,7 +3204,7 @@ const DEER_BIG2 = makeSprite([
 '......................kbbbBk...kBBBBk........kBBBBk.kbbbBk......',
 '......................kkkkk....kkkkk.........kkkkk..kkkkk.......',
 '......................kkkkk....kkkkk.........kkkkk..kkkkk.......',
-], { a: '#8a5a2e', h: '#caa06a', e: '#20242a', b: '#b07a45', B: '#8a5a2e', w: '#e8dcc0', t: '#e8dcc0', k: '#20242a', m: '#e8dcc0' });
+], { a: '#8d5420', h: '#d6a25e', e: '#191c21', b: '#bd7a38', B: '#8d5420', w: '#eddebb', t: '#eddebb', k: '#191c21', m: '#eddebb' });
 /* Alvin, big side profile for the trial screen (28x20, drawn at 2x):
    sturdy pit-type build, deep chest, floppy ear, green collar with tag,
    tail up and curved. He faces right, toward the deer. */
@@ -5100,7 +5100,7 @@ const FIELD_BUSH_DRY = tileCanvas(c => {
   c.fillStyle = '#9aa84e'; c.fillRect(5, 5, 4, 3); c.fillRect(9, 7, 3, 2);
   c.fillStyle = '#c2cc74'; c.fillRect(6, 5, 2, 1); c.fillRect(10, 6, 1, 1);
 });
-const GOAT_PAL = { k: '#33302a', w: '#f2ede0', W: '#d8d2c0', e: '#26221e', h: '#c9bfa8' };
+const GOAT_PAL = { k: '#282521', w: '#f4eede', W: '#dbd4bd', e: '#1e1b17', h: '#cdc1a4' };
 const GOAT = makeSprite([
 '..............',
 '.kk...........',
